@@ -150,6 +150,7 @@ movie_list = movies["title"].values
 book_list = books["title_author"].values
 song_list = songs["song_name_artist_name"].values
 
+st.set_page_config(layout="wide")
 st.header("Recommender System")
 menu = ["Movie", "Books", "Songs", "About"]
 choice = st.sidebar.selectbox("Menu", menu)
